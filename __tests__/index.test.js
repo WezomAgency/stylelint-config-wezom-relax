@@ -26,7 +26,10 @@ tests.forEach((test) => {
 
 		it('flags no warnings', () => {
 			return result.then((data) =>
-				expect(data.results[0].warnings).toHaveLength(0)
+				const warnings = data.results[0].warnings.filter(
+					(warning) => warning.rule === test
+				);
+				expect(warnings).toHaveLength(0);
 			);
 		});
 	});

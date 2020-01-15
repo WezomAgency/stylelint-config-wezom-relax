@@ -1,5 +1,7 @@
 # stylelint-config-wezom-relax
 
+![](https://github.com/WezomAgency/stylelint-config-wezom-relax/workflows/test%20rules/badge.svg)
+
 > shareable config for stylelint
 
 ---

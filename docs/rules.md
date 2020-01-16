@@ -11,23 +11,38 @@ grouped first by the thing they apply to and then by category and.
 
 #### Group [Possible errors / Limit language features / Stylistic issues]
 
-- [`rule-name`](link-to-the-doc) description
-    - option: [`value`](link-to-the-demonstation-patterns)
-    - аutofixable: `true | false`
-    - tests: [go to directory](link-to-test-cases)
+##### [`rule-name`](link-to-the-doc)
+
+_description_
+
+- option: [`value`](link-to-the-demonstation-patterns)
+- tests: [go to directory](link-to-test-cases)
 ```
 
 Below you can find a list of rules drawn up for `stylelint-config-wezom-relax`
+
+- [At-rule](#at-rule)
 
 ---
 
 ## At-rule
 
+#### Possible errors
+
+##### [`at-rule-no-unknown`](https://stylelint.io/user-guide/rules/at-rule-no-unknown)
+
+_Disallow unknown at-rules_
+
+- option: [`true`](https://stylelint.io/user-guide/rules/at-rule-no-unknown#true)
+- tests: _no tests yet_
+
 #### Stylistic issues
 
-- [`at-rule-name-case`](https://stylelint.io/user-guide/rules/at-rule-name-case) Specify lowercase or uppercase for at-rules names
-    - option: [`"lower"`](https://stylelint.io/user-guide/rules/at-rule-name-case#lower)
-    - аutofixable: `true`
-    - tests: [go to directory](../__tests__/at-rule-name-case)
+##### [`at-rule-name-case`](https://stylelint.io/user-guide/rules/at-rule-name-case)
+
+_Specify lowercase or uppercase for at-rules names (Аutofixable)_
+
+- option: [`"lower"`](https://stylelint.io/user-guide/rules/at-rule-name-case#lower)
+- tests: [go to directory](../__tests__/at-rule-name-case)
 
 ---

@@ -27,18 +27,18 @@ Below you can find a list of rules drawn up for `stylelint-config-wezom-relax`
 
 ## At-rule
 
-#### Possible errors
+### _Possible errors_
 
-##### [`at-rule-no-unknown`](https://stylelint.io/user-guide/rules/at-rule-no-unknown)
+#### [`at-rule-no-unknown`](https://stylelint.io/user-guide/rules/at-rule-no-unknown)
 
 _Disallow unknown at-rules_
 
 - option: [`true`](https://stylelint.io/user-guide/rules/at-rule-no-unknown#true)
 - tests: _no tests yet_
 
-#### Stylistic issues
+### _Stylistic issues_
 
-##### [`at-rule-name-case`](https://stylelint.io/user-guide/rules/at-rule-name-case)
+#### [`at-rule-name-case`](https://stylelint.io/user-guide/rules/at-rule-name-case)
 
 _Specify lowercase or uppercase for at-rules names (Аutofixable)_
 

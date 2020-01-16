@@ -1,13 +1,13 @@
 # Rules
 
-Here are all the rules within stylelint,
-grouped first by the thing they apply to and then by category and.
+Here are all the rules within stylelint,  
+grouped first by the thing they apply to and then by category and.  
 (inverted unlike the [original documentation](https://stylelint.io/user-guide/rules))
 
 #### Circuit example 
 
 ```md
-## Thin
+## Thing
 
 #### Group [Possible errors / Limit language features / Stylistic issues]
 

@@ -31,18 +31,16 @@ Below you can find a list of rules drawn up for `stylelint-config-wezom-relax`
 
 #### [`at-rule-no-unknown`](https://stylelint.io/user-guide/rules/at-rule-no-unknown)
 
-_Disallow unknown at-rules_
-
-- option: [`true`](https://stylelint.io/user-guide/rules/at-rule-no-unknown#true)
-- tests: _no tests yet_
+_Disallow unknown at-rules_  
+option: [`true`](https://stylelint.io/user-guide/rules/at-rule-no-unknown#true)  
+tests: _no tests yet_
 
 ### _Stylistic issues_
 
 #### [`at-rule-name-case`](https://stylelint.io/user-guide/rules/at-rule-name-case)
 
-_Specify lowercase or uppercase for at-rules names (Аutofixable)_
-
-- option: [`"lower"`](https://stylelint.io/user-guide/rules/at-rule-name-case#lower)
-- tests: [go to directory](../__tests__/at-rule-name-case)
+_Specify lowercase or uppercase for at-rules names (Аutofixable)_  
+option: [`"lower"`](https://stylelint.io/user-guide/rules/at-rule-name-case#lower)  
+tests: [go to directory](../__tests__/at-rule-name-case)
 
 ---

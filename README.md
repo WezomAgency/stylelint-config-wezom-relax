@@ -13,8 +13,3 @@
 > __Rules can changed!__
 
 ---
-
-Extends [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard#stylelint-config-standard)
-
-
-

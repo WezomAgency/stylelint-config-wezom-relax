@@ -13,8 +13,8 @@ grouped first by the thing they apply to and then by category and.
 
 - [`rule-name`](link-to-the-doc) description
     - option: `value`
-    - tests: [go to directory](link-to-test-cases)
     - аutofixable: `true | false`
+    - tests: [go to directory](link-to-test-cases)
 ```
 
 Below you can find a list of rules drawn up for `stylelint-config-wezom-relax`
@@ -27,7 +27,7 @@ Below you can find a list of rules drawn up for `stylelint-config-wezom-relax`
 
 - [`at-rule-name-case`](https://stylelint.io/user-guide/rules/at-rule-name-case) Specify lowercase or uppercase for at-rules names
     - option: `"lower"`
-    - tests: [go to directory](../__tests__/at-rule-name-case)
     - аutofixable: `true`
+    - tests: [go to directory](../__tests__/at-rule-name-case)
 
 ---

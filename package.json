@@ -22,9 +22,6 @@
     "url": "https://github.com/WezomAgency/stylelint-config-wezom-relax/issues"
   },
   "homepage": "https://github.com/WezomAgency/stylelint-config-wezom-relax#readme",
-  "dependencies": {
-    "stylelint-config-recommended": "^3.0.0"
-  },
   "prettier": {
     "arrowParens": "always",
     "bracketSpacing": true,

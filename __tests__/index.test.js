@@ -1,22 +1,33 @@
 const stylelint = require('stylelint');
 const fs = require('fs');
 const path = require('path');
-const config = require('../index');
+const chalk = require('chalk');
+const configWezomRelax = require('../index');
 
-const tests = ['at-rule-name-case'];
+const rules = [
+	'at-rule-name-case',
+	'at-rule-no-unknown'
+];
 
 const getCode = (test, file) => {
 	return fs.readFileSync(path.join(__dirname, test, file), 'utf-8').toString();
 };
 
-tests.forEach((test) => {
-	describe(`${test} => valid cases`, () => {
+rules.forEach((rule) => {
+	const config = {
+		...configWezomRelax,
+		rules: {
+			[rule]: configWezomRelax.rules[rule]
+		}
+	};
+
+	describe(`${rule} :: ${chalk.yellow('valid cases')}`, () => {
 		let result;
 
 		beforeEach(() => {
 			result = stylelint.lint({
 				config,
-				code: getCode(test, 'valid.css')
+				code: getCode(rule, 'valid.css')
 			});
 		});
 
@@ -26,21 +37,18 @@ tests.forEach((test) => {
 
 		it('flags no warnings', () => {
 			return result.then((data) => {
-				const warnings = data.results[0].warnings.filter(
-					(warning) => warning.rule === test
-				);
-				expect(warnings).toHaveLength(0);
+				expect(data.results[0].warnings).toHaveLength(0);
 			});
 		});
 	});
 
-	describe(`${test} => invalid cases`, () => {
+	describe(`${rule} :: ${chalk.red('invalid cases')}`, () => {
 		let result;
 
 		beforeEach(() => {
 			result = stylelint.lint({
 				config,
-				code: getCode(test, 'invalid.css')
+				code: getCode(rule, 'invalid.css')
 			});
 		});
 
@@ -50,10 +58,7 @@ tests.forEach((test) => {
 
 		it('has flags warnings', () => {
 			return result.then((data) => {
-				const warnings = data.results[0].warnings.filter(
-					(warning) => warning.rule === test
-				);
-				expect(warnings.length).toBeGreaterThan(0);
+				expect(data.results[0].warnings.length).toBeGreaterThan(0);
 			});
 		});
 	});

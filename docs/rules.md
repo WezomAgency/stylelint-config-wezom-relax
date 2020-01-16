@@ -7,16 +7,15 @@ grouped first by the thing they apply to and then by category and.
 #### Circuit example 
 
 ```md
-## Thing
+## Group
 
-#### Group [Possible errors / Limit language features / Stylistic issues]
+### Category [Possible errors / Limit language features / Stylistic issues]
 
-##### [`rule-name`](link-to-the-doc)
+#### [`rule-name`](link-to-the-doc)
 
-_description_
-
-- option: [`value`](link-to-the-demonstation-patterns)
-- tests: [go to directory](link-to-test-cases)
+_description_  
+option: [`value`](link-to-the-demonstation-patterns)  
+tests: [go to directory](link-to-test-cases)
 ```
 
 Below you can find a list of rules drawn up for `stylelint-config-wezom-relax`
@@ -41,6 +40,6 @@ tests: _no tests yet_
 
 _Specify lowercase or uppercase for at-rules names (Аutofixable)_  
 option: [`"lower"`](https://stylelint.io/user-guide/rules/at-rule-name-case#lower)  
-tests: [go to directory](../__tests__/at-rule-name-case)
+tests: [go to the directory](../__tests__/at-rule-name-case)
 
 ---

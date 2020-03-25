@@ -4,6 +4,8 @@ module.exports = {
 	],
 	rules: {
 		'at-rule-name-case': 'lower',
-		'declaration-no-important': true
+		'declaration-no-important': true,
+		'selector-max-id': 0,
+		'selector-max-universal': 0
 	}
 };

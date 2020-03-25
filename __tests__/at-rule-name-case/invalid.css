@@ -1,1 +1,5 @@
-@mEdia {}
+@mEdia {
+	div {
+		position: relative;
+	}
+}

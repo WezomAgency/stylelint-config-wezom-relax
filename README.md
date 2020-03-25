@@ -1,6 +1,7 @@
 # stylelint-config-wezom-relax
 
 ![](https://github.com/WezomAgency/stylelint-config-wezom-relax/workflows/test%20rules/badge.svg)
+[![npm](https://img.shields.io/badge/npm-install-red.svg)](https://www.npmjs.com/package/stylelint-config-wezom-relax)
 
 > shareable config for stylelint based on [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended#readme)
 

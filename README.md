@@ -2,7 +2,7 @@
 
 ![](https://github.com/WezomAgency/stylelint-config-wezom-relax/workflows/test%20rules/badge.svg)
 
-> shareable config for stylelint
+> shareable config for stylelint based on [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended#readme)
 
 ---
 

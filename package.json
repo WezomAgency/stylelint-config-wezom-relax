@@ -1,8 +1,11 @@
 {
   "name": "stylelint-config-wezom-relax",
-  "version": "0.1.0-alpha",
+  "version": "0.2.0-alpha",
   "description": "shareable config for stylelint based on stylelint-config-recommended",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "jest",
     "stylelint-valid": "stylelint \"__tests__/**/valid.css\" --config ./index.js",

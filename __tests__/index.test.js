@@ -2,12 +2,14 @@ const stylelint = require('stylelint');
 const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
+const glob = require('glob');
+const fromCWD = require('from-cwd');
 const configWezomRelax = require('../index');
 
-const rules = [
-	'at-rule-name-case',
-	'at-rule-no-unknown'
-];
+const rules = glob
+	.sync(fromCWD('./__tests__/*'))
+	.filter((dir) => fs.lstatSync(dir).isDirectory())
+	.map((dir) => path.basename(dir));
 
 const getCode = (test, file) => {
 	return fs.readFileSync(path.join(__dirname, test, file), 'utf-8').toString();

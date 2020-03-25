@@ -14,4 +14,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
+      - run: npm run stylelint-valid
       - run: npm test

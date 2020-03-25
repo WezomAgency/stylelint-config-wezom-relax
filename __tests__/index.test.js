@@ -5,8 +5,7 @@ const chalk = require('chalk');
 const configWezomRelax = require('../index');
 
 const rules = [
-	'at-rule-name-case',
-	'at-rule-no-unknown'
+	'at-rule-name-case'
 ];
 
 const getCode = (test, file) => {

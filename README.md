@@ -6,11 +6,11 @@
 
 ---
 
-## Working in progress
+## The package is in the Alpha version
 
 > __This package is not stable yet!__  
-> __So don't use it in production!__  
-> __Rules can changed!__
+> __So do not use it in production!__  
+> __Rules can be changed!__
 
 ---
 

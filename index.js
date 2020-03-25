@@ -1,6 +1,9 @@
 module.exports = {
+	extends: [
+		'stylelint-config-recommended'
+	],
 	rules: {
 		'at-rule-name-case': 'lower',
-		'at-rule-no-unknown': true
+		'declaration-no-important': true
 	}
 };
